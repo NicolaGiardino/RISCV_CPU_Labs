@@ -1,0 +1,92 @@
+\m4_TLV_version 1d: tl-x.org
+\SV
+
+   // =========================================
+   // Welcome!  Try the tutorials via the menu.
+   // =========================================
+
+   // Default Makerchip TL-Verilog Code Template
+   
+   // Macro providing required top-level module definition, random
+   // stimulus support, and Verilator config.
+   m4_makerchip_module   // (Expanded in Nav-TLV pane.)
+   /* verilator lint_on WIDTH */
+   m4_include_lib(['https://raw.githubusercontent.com/stevehoover/LF-Building-a-RISC-V-CPU-Core/main/lib/calc_viz.tlv']). 
+\TLV
+   
+   $reset = *reset;
+   // Full adder 
+   //$xor = $in1 ^ $in2;
+   //$out1 = $xor ^ $carry_in;
+   //$and1 = $carry_in && $xor;
+   //$and2 = $in1 && $in2;
+   //$carry_out = $and1 || $and2;
+
+   // Vector sum
+   //$out2[7:0] = $in4[6:0] + $in5[6:0];
+   
+   // Mux
+   //$out3 = $sel2 ? $in1 : $in2;
+   // More than 2 vals mux
+   //$out[7:0] =
+   //   $sel[3]
+   //      ? $in3 :
+   //   $sel[2]
+   //      ? $in2 :
+   //   $sel[1]
+   //      ? $in1:
+         
+   //        $in0;
+   
+   //Lab : Calculator
+   //$sum[31:0] = $val1[31:0] + $val2[31:0];
+   //$diff[31:0] = $val1[31:0] - $val2[31:0];
+   //$prod[31:0] = $val1[31:0] * $val2[31:0];
+   //$quot[31:0] = $val1[31:0] / $val2[31:0];
+   //$outCalc[31:0] =
+   //   $op[1:0] == 3
+   //      ? $quot[31:0] :
+   //   $op[1:0] == 2
+   //      ? $prod[31:0] :
+   //   $op[1:0] == 1
+   //      ? $diff[31:0] :
+   
+   //        $sum[31:0];
+   
+   //Assign values
+   //$foo = 8'd6;
+   //$foo = 8'b110;
+   //$foo = 8'h6;
+   //Concatenate bytes
+   //$word[15:0] = {$upper_byte, $lower_byte}
+   
+   
+   $val1[31:0] = {26'b0, $val1_rand[5:0]};
+   $val2[31:0] = {28'b0, $val2_rand[3:0]};
+   
+   //Fibonacci sequence waveforms
+   //$num[31:0] = $reset ? 1 : (>>1$num + >>2$num);
+   
+   //Combinational calculator w/ Flip-Flops
+   $zero[31:0] = 32'b0;
+   $sum[31:0] = $val1[31:0] + $val2[31:0];
+   $diff[31:0] = $val1[31:0] - $val2[31:0];
+   $prod[31:0] = $val1[31:0] * $val2[31:0];
+   $quot[31:0] = $val1[31:0] / $val2[31:0];
+   $out[31:0] =
+      $op[1:0] == 2
+         ? $quot[31:0] :
+      $op[1:0] == 1
+         ? $prod[31:0] :
+      $op[1:0] == 3
+         ? $zero[31:0] :
+           
+           $sum[31:0];
+   
+   
+   // Assert these to end simulation (before Makerchip cycle limit).
+   *passed = *cyc_cnt > 40;
+   *failed = 1'b0;
+   m4+calc_viz()
+\SV
+   endmodule
