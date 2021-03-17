@@ -4,6 +4,7 @@
    
    
    m4_define(['M4_EXT_M'], 1)
+   m4_define(['M4_EXT_A'], 1)
 
    m4_include_lib(['https://raw.githubusercontent.com/stevehoover/warp-v_includes/1d1023ccf8e7b0a8cf8e8fc4f0a823ebb61008e3/risc-v_defs.tlv'])
    m4_include_lib(['https://raw.githubusercontent.com/stevehoover/LF-Building-a-RISC-V-CPU-Core/main/lib/risc-v_shell_lib.tlv'])
@@ -148,6 +149,7 @@
    $is_sra = $dec_bits == 17'b0100000_101_0110011;
    $is_or = $dec_bits == 17'b0000000_110_0110011;
    $is_and = $dec_bits == 17'b0000000_111_0110011;
+   //R-Type instructions for M Standard Extension
    $is_mul = $dec_bits == 17'b0000001_000_0110011;
    $is_mulh = $dec_bits == 17'b0000001_001_0110011;
    $is_mulhu = $dec_bits == 17'b0000001_011_0110011;
@@ -156,7 +158,18 @@
    $is_divu = $dec_bits == 17'b0000001_101_0110011;
    $is_rem = $dec_bits == 17'b0000001_110_0110011;
    $is_remu = $dec_bits == 17'b0000001_111_0110011;
-   
+   //R-Type instructions for A Standard Extension
+   $is_lsw = $dec_bits ==? 17'b00010xx_010_0101111;
+   $is_scw = $dec_bits ==? 17'b00011xx_010_0101111;
+   $is_amoswapw = $dec_bits ==? 17'b00001xx_010_0101111;
+   $is_amoaddw = $dec_bits ==? 17'b00000xx_010_0101111;
+   $is_amoandw = $dec_bits ==? 17'b01100xx_010_0101111;
+   $is_amoorw = $dec_bits ==? 17'b01000xx_010_0101111;
+   $is_amoxorw = $dec_bits ==? 17'b00100xx_010_0101111;
+   $is_amomaxw = $dec_bits ==? 17'b10100xx_010_0101111;
+   $is_amominw = $dec_bits ==? 17'b10000xx_010_0101111;
+   $is_amomaxuw = $dec_bits ==? 17'b11100xx_010_0101111;
+   $is_amominuw = $dec_bits ==? 17'b11000xx_010_0101111;
    
    
    //REGISTER FILE
