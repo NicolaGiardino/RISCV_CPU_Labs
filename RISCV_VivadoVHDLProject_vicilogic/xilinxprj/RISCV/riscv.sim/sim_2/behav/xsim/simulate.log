@@ -1,0 +1,6 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Note: RISC-V simulation start
+Time: 54 ns  Iteration: 0  Process: /RISCV_TB/STIM_i  File: C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/RISCV_TB.vhd
+Note: simulation done
+Time: 154 ns  Iteration: 0  Process: /RISCV_TB/STIM_i  File: C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/RISCV_TB.vhd

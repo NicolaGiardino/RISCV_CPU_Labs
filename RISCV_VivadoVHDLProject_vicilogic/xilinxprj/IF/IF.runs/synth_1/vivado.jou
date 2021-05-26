@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Sep 28 09:46:49 2020
+# Process ID: 14452
+# Current directory: C:/RISC_FYP/RISC-VV/RISCV_vicilogic/xilinxprj/IF/IF.runs/synth_1
+# Command line: vivado.exe -log RISCV_IF.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RISCV_IF.tcl
+# Log file: C:/RISC_FYP/RISC-VV/RISCV_vicilogic/xilinxprj/IF/IF.runs/synth_1/RISCV_IF.vds
+# Journal file: C:/RISC_FYP/RISC-VV/RISCV_vicilogic/xilinxprj/IF/IF.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RISCV_IF.tcl -notrace

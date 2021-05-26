@@ -1,0 +1,6 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Note: RISC-V simulation start
+Time: 54 ns  Iteration: 0  Process: /RISCV_TB/STIM_i  File: C:/RISC_FYP/RISC-VV/RISCV_vicilogic/HDLmodel/RISCV_TB.vhd
+Note: simulation done
+Time: 1334 ns  Iteration: 0  Process: /RISCV_TB/STIM_i  File: C:/RISC_FYP/RISC-VV/RISCV_vicilogic/HDLmodel/RISCV_TB.vhd

@@ -1,0 +1,18 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../HDLmodel/EX/ALU.vhd" \
+"../../../../../../HDLmodel/IF/CB32CLEIncValue.vhd" \
+"../../../../../../HDLmodel/ID/DEC.vhd" \
+"../../../../../../HDLmodel/RISCV_vicilogic_Package.vhd" \
+"../../../../../../HDLmodel/EX/EX.vhd" \
+"../../../../../../HDLmodel/ID/ID.vhd" \
+"../../../../../../HDLmodel/IF/IF.vhd" \
+"../../../../../../HDLmodel/IF/IM.vhd" \
+"../../../../../../HDLmodel/MEM/MEM.vhd" \
+"../../../../../../HDLmodel/ID/RB.vhd" \
+"../../../../../../HDLmodel/RISCV.vhd" \
+"../../../../../../HDLmodel/WB/WB.vhd" \
+"../../../../../../HDLmodel/RISCV_TB.vhd" \
+
+# Do not sort compile order
+nosort

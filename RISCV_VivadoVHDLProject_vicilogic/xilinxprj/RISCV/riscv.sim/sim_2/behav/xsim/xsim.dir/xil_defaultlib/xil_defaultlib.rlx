@@ -1,0 +1,17 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/EX/ALU.vhd,1622058758,vhdl,,,,alu,,,,,,,,
+C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/EX/EX.vhd,1622054385,vhdl,,,,ex,,,,,,,,
+C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/ID/DEC.vhd,1622058007,vhdl,,,,dec,,,,,,,,
+C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/ID/ID.vhd,1621955941,vhdl,,,,id,,,,,,,,
+C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/ID/RB.vhd,1622058308,vhdl,,,,rb,,,,,,,,
+C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/IF/CB32CLEIncValue.vhd,1621955878,vhdl,,,,cb32cleincvalue,,,,,,,,
+C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/IF/IF.vhd,1621956212,vhdl,,,,riscv_if,,,,,,,,
+C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/IF/IM.vhd,1621955902,vhdl,,,,im,,,,,,,,
+C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd,1601330934,vhdl,,,,mem,,,,,,,,
+C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/RISCV.vhd,1621955799,vhdl,,,,riscv,,,,,,,,
+C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/RISCV_TB.vhd,1622058775,vhdl,,,,riscv_tb,,,,,,,,
+C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/RISCV_vicilogic_Package.vhd,1601332224,vhdl,C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/RISCV_TB.vhd,,,riscv_vicilogic_package,,,,,,,,
+C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/WB/WB.vhd,1621954761,vhdl,,,,wb,,,,,,,,

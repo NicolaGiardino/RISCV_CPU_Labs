@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="RISCV_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="RISCV_TB" />
+            <top_module name="riscv_vicilogic_package" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1373843689fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="208"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="57" />
+   <wvobject fp_name="/RISCV_TB/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/ce" type="logic">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/useDebugInstruction" type="logic">
+      <obj_property name="ElementShortName">useDebugInstruction</obj_property>
+      <obj_property name="ObjectShortName">useDebugInstruction</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/debugInstruction" type="array">
+      <obj_property name="ElementShortName">debugInstruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debugInstruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/testNo" type="other">
+      <obj_property name="ElementShortName">testNo</obj_property>
+      <obj_property name="ObjectShortName">testNo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/endOfSim" type="other">
+      <obj_property name="ElementShortName">endOfSim</obj_property>
+      <obj_property name="ObjectShortName">endOfSim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/clkPeriod" type="other">
+      <obj_property name="ElementShortName">clkPeriod</obj_property>
+      <obj_property name="ObjectShortName">clkPeriod</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/instruction" type="array">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/branch" type="logic">
+      <obj_property name="ElementShortName">branch</obj_property>
+      <obj_property name="ObjectShortName">branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/extImm" type="array">
+      <obj_property name="ElementShortName">extImm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">extImm[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/rs1" type="array">
+      <obj_property name="ElementShortName">rs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/rs2" type="array">
+      <obj_property name="ElementShortName">rs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/RWr" type="logic">
+      <obj_property name="ElementShortName">RWr</obj_property>
+      <obj_property name="ObjectShortName">RWr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/rd" type="array">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/selPCSrc" type="logic">
+      <obj_property name="ElementShortName">selPCSrc</obj_property>
+      <obj_property name="ObjectShortName">selPCSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/jalr" type="logic">
+      <obj_property name="ElementShortName">jalr</obj_property>
+      <obj_property name="ObjectShortName">jalr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/auipc" type="logic">
+      <obj_property name="ElementShortName">auipc</obj_property>
+      <obj_property name="ObjectShortName">auipc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/selALUBSrc" type="logic">
+      <obj_property name="ElementShortName">selALUBSrc</obj_property>
+      <obj_property name="ObjectShortName">selALUBSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/selALUOp" type="array">
+      <obj_property name="ElementShortName">selALUOp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">selALUOp[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/selDToM" type="array">
+      <obj_property name="ElementShortName">selDToM[1:0]</obj_property>
+      <obj_property name="ObjectShortName">selDToM[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/MWr" type="logic">
+      <obj_property name="ElementShortName">MWr</obj_property>
+      <obj_property name="ObjectShortName">MWr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/MRd" type="logic">
+      <obj_property name="ElementShortName">MRd</obj_property>
+      <obj_property name="ObjectShortName">MRd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/selDFrM" type="array">
+      <obj_property name="ElementShortName">selDFrM[2:0]</obj_property>
+      <obj_property name="ObjectShortName">selDFrM[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/selWBD" type="array">
+      <obj_property name="ElementShortName">selWBD[1:0]</obj_property>
+      <obj_property name="ObjectShortName">selWBD[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/opCode" type="array">
+      <obj_property name="ElementShortName">opCode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">opCode[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/f7" type="array">
+      <obj_property name="ElementShortName">f7[6:0]</obj_property>
+      <obj_property name="ObjectShortName">f7[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/f3" type="array">
+      <obj_property name="ElementShortName">f3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">f3[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/out_bits" type="array">
+      <obj_property name="ElementShortName">out_bits[16:0]</obj_property>
+      <obj_property name="ObjectShortName">out_bits[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/is_u_instr" type="logic">
+      <obj_property name="ElementShortName">is_u_instr</obj_property>
+      <obj_property name="ObjectShortName">is_u_instr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/is_r_instr" type="logic">
+      <obj_property name="ElementShortName">is_r_instr</obj_property>
+      <obj_property name="ObjectShortName">is_r_instr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/is_b_instr" type="logic">
+      <obj_property name="ElementShortName">is_b_instr</obj_property>
+      <obj_property name="ObjectShortName">is_b_instr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/is_s_instr" type="logic">
+      <obj_property name="ElementShortName">is_s_instr</obj_property>
+      <obj_property name="ObjectShortName">is_s_instr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/is_i_instr" type="logic">
+      <obj_property name="ElementShortName">is_i_instr</obj_property>
+      <obj_property name="ObjectShortName">is_i_instr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/is_j_instr" type="logic">
+      <obj_property name="ElementShortName">is_j_instr</obj_property>
+      <obj_property name="ObjectShortName">is_j_instr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/rs1_valid" type="logic">
+      <obj_property name="ElementShortName">rs1_valid</obj_property>
+      <obj_property name="ObjectShortName">rs1_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/rs2_valid" type="logic">
+      <obj_property name="ElementShortName">rs2_valid</obj_property>
+      <obj_property name="ObjectShortName">rs2_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/rd_valid" type="logic">
+      <obj_property name="ElementShortName">rd_valid</obj_property>
+      <obj_property name="ObjectShortName">rd_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/RB_i/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/RB_i/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/RB_i/rs1" type="array">
+      <obj_property name="ElementShortName">rs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/RB_i/rs2" type="array">
+      <obj_property name="ElementShortName">rs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/RB_i/RWr" type="logic">
+      <obj_property name="ElementShortName">RWr</obj_property>
+      <obj_property name="ObjectShortName">RWr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/RB_i/WBDat" type="array">
+      <obj_property name="ElementShortName">WBDat[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WBDat[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/RB_i/rd" type="array">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/RB_i/rs1D" type="array">
+      <obj_property name="ElementShortName">rs1D[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1D[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/RB_i/rs2D" type="array">
+      <obj_property name="ElementShortName">rs2D[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2D[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/RB_i/Reg" type="array">
+      <obj_property name="ElementShortName">Reg[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">Reg[31:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/RB_i/NS" type="array">
+      <obj_property name="ElementShortName">NS[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">NS[31:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/RB_i/CS" type="array">
+      <obj_property name="ElementShortName">CS[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">CS[31:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/EX_i/ALU_i/A" type="array">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/EX_i/ALU_i/B" type="array">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/EX_i/ALU_i/selALUOp" type="array">
+      <obj_property name="ElementShortName">selALUOp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">selALUOp[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/EX_i/ALU_i/branch" type="logic">
+      <obj_property name="ElementShortName">branch</obj_property>
+      <obj_property name="ObjectShortName">branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/EX_i/ALU_i/zero" type="logic">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/EX_i/ALU_i/ALUOut" type="array">
+      <obj_property name="ElementShortName">ALUOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/EX_i/ALU_i/out_s" type="array">
+      <obj_property name="ElementShortName">out_s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_s[31:0]</obj_property>
+   </wvobject>
+</wave_config>
