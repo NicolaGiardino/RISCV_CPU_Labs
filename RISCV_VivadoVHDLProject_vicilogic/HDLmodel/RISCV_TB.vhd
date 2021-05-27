@@ -57,15 +57,14 @@ begin
  rst <= '1';
  wait for 1.7*clkPeriod; -- simulate to just after clk rising edge
  rst <= '0';
- wait for clkPeriod;  
-
- ce <= '1';
+ ce <= '1'; 
  testNo <= 1;
+ useDebugInstruction <= '0';
+ wait for clkPeriod; 
  -- o/p msg to simulation  transcript
  report "RISC-V simulation start"; 
 
- useDebugInstruction <= '0';
- wait for 5*clkPeriod; 	 
+ wait for 10*clkPeriod; 	 
 
  report "simulation done";   
  endOfSim <= true;

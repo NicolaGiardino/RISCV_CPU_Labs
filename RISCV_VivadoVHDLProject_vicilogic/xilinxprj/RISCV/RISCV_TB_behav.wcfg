@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1373843689fs"></ZoomEndTime>
+      <ZoomEndTime time="309192386fs"></ZoomEndTime>
       <Cursor1Time time="1000000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="208"></NameColumnWidth>
+      <NameColumnWidth column_width="198"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="57" />
+   <WVObjectSize size="84" />
    <wvobject fp_name="/RISCV_TB/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -133,8 +133,12 @@
       <obj_property name="ObjectShortName">f3[2:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/out_bits" type="array">
-      <obj_property name="ElementShortName">out_bits[16:0]</obj_property>
-      <obj_property name="ObjectShortName">out_bits[16:0]</obj_property>
+      <obj_property name="ElementShortName">out_bits[17:0]</obj_property>
+      <obj_property name="ObjectShortName">out_bits[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/dec_bits" type="array">
+      <obj_property name="ElementShortName">dec_bits[10:0]</obj_property>
+      <obj_property name="ObjectShortName">dec_bits[10:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/is_u_instr" type="logic">
       <obj_property name="ElementShortName">is_u_instr</obj_property>
@@ -247,5 +251,109 @@
    <wvobject fp_name="/RISCV_TB/uut/EX_i/ALU_i/out_s" type="array">
       <obj_property name="ElementShortName">out_s[31:0]</obj_property>
       <obj_property name="ObjectShortName">out_s[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/MWr" type="logic">
+      <obj_property name="ElementShortName">MWr</obj_property>
+      <obj_property name="ObjectShortName">MWr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/MRd" type="logic">
+      <obj_property name="ElementShortName">MRd</obj_property>
+      <obj_property name="ObjectShortName">MRd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/add" type="array">
+      <obj_property name="ElementShortName">add[31:0]</obj_property>
+      <obj_property name="ObjectShortName">add[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/DToM" type="array">
+      <obj_property name="ElementShortName">DToM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DToM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/inport" type="array">
+      <obj_property name="ElementShortName">inport[15:0]</obj_property>
+      <obj_property name="ObjectShortName">inport[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/DFrM" type="array">
+      <obj_property name="ElementShortName">DFrM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DFrM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/outport" type="array">
+      <obj_property name="ElementShortName">outport[15:0]</obj_property>
+      <obj_property name="ObjectShortName">outport[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/memArray" type="array">
+      <obj_property name="ElementShortName">memArray[0:63][31:0]</obj_property>
+      <obj_property name="ObjectShortName">memArray[0:63][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/memAddrSlice" type="array">
+      <obj_property name="ElementShortName">memAddrSlice[5:0]</obj_property>
+      <obj_property name="ObjectShortName">memAddrSlice[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/ce0" type="logic">
+      <obj_property name="ElementShortName">ce0</obj_property>
+      <obj_property name="ObjectShortName">ce0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/ce1" type="logic">
+      <obj_property name="ElementShortName">ce1</obj_property>
+      <obj_property name="ObjectShortName">ce1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/load" type="logic">
+      <obj_property name="ElementShortName">load</obj_property>
+      <obj_property name="ObjectShortName">load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/up" type="logic">
+      <obj_property name="ElementShortName">up</obj_property>
+      <obj_property name="ObjectShortName">up</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/ce" type="logic">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/dataStack" type="array">
+      <obj_property name="ElementShortName">dataStack[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dataStack[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/cInPOutP" type="array">
+      <obj_property name="ElementShortName">cInPOutP[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cInPOutP[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/control0" type="array">
+      <obj_property name="ElementShortName">control0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">control0[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/control1" type="array">
+      <obj_property name="ElementShortName">control1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">control1[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/count" type="array">
+      <obj_property name="ElementShortName">count[15:0]</obj_property>
+      <obj_property name="ObjectShortName">count[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/rInport" type="array">
+      <obj_property name="ElementShortName">rInport[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rInport[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/outport_s" type="array">
+      <obj_property name="ElementShortName">outport_s[15:0]</obj_property>
+      <obj_property name="ObjectShortName">outport_s[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/loadDat" type="array">
+      <obj_property name="ElementShortName">loadDat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">loadDat[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/NS" type="array">
+      <obj_property name="ElementShortName">NS[15:0]</obj_property>
+      <obj_property name="ObjectShortName">NS[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/MEM_i/CS" type="array">
+      <obj_property name="ElementShortName">CS[15:0]</obj_property>
+      <obj_property name="ObjectShortName">CS[15:0]</obj_property>
    </wvobject>
 </wave_config>

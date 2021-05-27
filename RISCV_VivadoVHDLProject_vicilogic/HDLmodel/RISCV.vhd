@@ -80,7 +80,9 @@ component MEM is
          MRd  : in std_logic;                      -- Memory read control  (0 : read)
          add  : in std_logic_vector(31 downto 0);  -- Address 
          DToM : in std_logic_vector(31 downto 0);  -- Data in 
-         DFrM : out std_logic_vector(31 downto 0)  -- Data in 
+         inport : in std_logic_vector(15 downto 0);
+         DFrM : out std_logic_vector(31 downto 0);  -- Data in 
+         outport : out std_logic_vector(15 downto 0) 
         );
 end component;       
 
@@ -120,6 +122,9 @@ signal selDFrM     : std_logic_vector(2 downto 0);
 signal DFrM        : std_logic_vector(31 downto 0);   
 signal selWBD      : std_logic_vector(1 downto 0);
 signal WBDat  	   : std_logic_vector(31 downto 0);
+
+signal inport      : std_logic_vector(15 downto 0) := (others => '0');
+signal outport     : std_logic_vector(15 downto 0) := (others => '0');
 
 signal IMInstruction : std_logic_vector(31 downto 0);
 
@@ -189,7 +194,9 @@ MEM_i: MEM port map
          MRd  => MRd, 
          add  => ALUOut, 
          DToM => DToM,
-         DFrM => DFrM
+         DFrM => DFrM,
+         inport => inport,
+         outport => outport
         );
 
 WB_i: WB port map

@@ -35,10 +35,11 @@ signal rs1_valid, rs2_valid, rd_valid : std_logic;
 
 begin
 
-instr_type_i: process(instruction)
+asgnOpCode_i : opCode <= instruction(6 downto 0);
+
+instr_type_i: process(opCode)
 begin
-	opCode <= instruction(6 downto 0);
-	if opCode(6 downto 2) = "00101" then
+	if opCode(6) = '0' and opCode(4 downto 2) = "101" then
 		is_u_instr <= '1';
 	else 
 		is_u_instr 	<='0';
@@ -75,7 +76,7 @@ begin
 	end if;
 end process;
 
-valid_i : process(is_i_instr, is_r_instr, is_b_instr, is_s_instr, is_u_instr, is_j_instr)
+valid_i : process(instruction, is_i_instr, is_r_instr, is_b_instr, is_s_instr, is_u_instr, is_j_instr)
 begin
 	if (is_i_instr = '1' or is_r_instr = '1' or is_b_instr = '1' or is_s_instr = '1') then
 		rs1_valid <= '1';
@@ -135,7 +136,7 @@ begin
 	end if;
 end process;
 
-reg_i : process(rs1_valid, rs2_valid, rd_valid)
+reg_i : process(instruction, rs1_valid, rs2_valid, rd_valid)
 begin
     if rs1_valid = '1' then
 		rs1 <= instruction(19 downto 15);
@@ -156,7 +157,7 @@ begin
 	end if;
 end process;
 
-out_bits_i : process(is_i_instr, is_r_instr, is_b_instr, is_s_instr, is_u_instr, is_j_instr)
+out_bits_i : process(instruction,  is_i_instr, is_r_instr, is_b_instr, is_s_instr, is_u_instr, is_j_instr)
 begin
 	if (is_r_instr = '1' or (is_i_instr = '1' and instruction(31 downto 25) = "0100000" and instruction(14 downto 12) = "101" and instruction(6 downto 0) = "0010011")) then
 		f7 <= instruction(31 downto 25); 
@@ -171,9 +172,9 @@ begin
 	end if;
 end process;
 
-dec_bits_i: dec_bits <= f7(5) & f3(2 downto 0) & instruction(6 downto 0);
+dec_bits_i: dec_bits <= f7(5) & f3(2 downto 0) & opCode(6 downto 0);
 
-DEC_i : process(dec_bits)
+DEC_i : process(dec_bits, is_i_instr, is_r_instr, is_b_instr, is_s_instr, is_u_instr, is_j_instr)
 begin
 	-- Processing instructions by assigning to out reg
 	-- out_bits <= RWr & selWBD(2) & selDFrM(3) & MRd & MWr & selDToM(2) & selALUOp(4) & selALUBSrc & auipc & jalr & selPCSrc
@@ -181,7 +182,7 @@ begin
 	   case dec_bits(6 downto 0) is
 		  -- U-Type Instructions
 		  when "0110111" =>	--LUI
-	   		  out_bits <= (others => '0');
+	   		  out_bits <= '1' & (16 downto 0 => '0');
 		  when "0010111" => --AUIPC
 			 out_bits <= (17 downto 4 => '0') & "010" & '0';
 		  -- J-Type Instructions
@@ -210,15 +211,15 @@ begin
 			     out_bits <= (17 downto 8 => '0') & "1111" & "100" & branch;
 		      -- I-Type Instructions
 		      when "0000000011"	=> --LB
-			     out_bits <= '0' & "01" & "010" & '1' & '0' & (9 downto 0 => '0');
+			     out_bits <= '1' & "01" & "010" & '1' & '0' & (9 downto 0 => '0');
 		      when "0010000011" => --LH
-			     out_bits <= '0' & "01" & "001" & '1' & '0' & (9 downto 0 => '0');
+			     out_bits <= '1' & "01" & "001" & '1' & '0' & (9 downto 0 => '0');
 		      when "0100000011" => --LW
-			     out_bits <= '0' & "01" & "000" & '1' & '0' & (9 downto 0 => '0');
+			     out_bits <= '1' & "01" & "000" & '1' & '0' & (9 downto 0 => '0');
 		      when "1000000011" => --LBU
-			     out_bits <= '0' & "01" & "100" & '1' & '0' & (9 downto 0 => '0');
+			     out_bits <= '1' & "01" & "100" & '1' & '0' & (9 downto 0 => '0');
 		      when "1100000011" => --LWU
-			     out_bits <= '0' & "01" & "011" & '1' & '0' & (9 downto 0 => '0');
+			     out_bits <= '1' & "01" & "011" & '1' & '0' & (9 downto 0 => '0');
 		      when "0000010011" => --ADDI
 			     out_bits <= '1' & (16 downto 0 => '0');
 		      when "0100010011" => --SLTI
@@ -233,22 +234,23 @@ begin
 			     out_bits <= '1' & (16 downto 8 => '0') & "0010" & "000" & '0';
 		      -- S-Type Instructions
 		      when "0000100011" => --SB
-			     out_bits <= '1' & "00" & "000" & '0' & '1' & "10" & (7 downto 0 => '0');
+			     out_bits <= '0' & "00" & "000" & '0' & '1' & "10" & (7 downto 0 => '0');
 		      when "0010100011" => --SH
-			     out_bits <= '1' & "00" & "000" & '0' & '1' & "01" & (7 downto 0 => '0');
+			     out_bits <= '0' & "00" & "000" & '0' & '1' & "01" & (7 downto 0 => '0');
 		      when "0100100011" => --SW
-			     out_bits <= '1' & "00" & "000" & '0' & '1' & "00" & (7 downto 0 => '0');
+			     out_bits <= '0' & "00" & "000" & '0' & '1' & "00" & (7 downto 0 => '0');
 		     when others =>
 			     out_bits <= (others => '0');
 		  end case;
+		  if dec_bits = "00010010011" then --SLLI
+			     out_bits <= '1' & (16 downto 8 => '0') & "0101" & "000" & '0';
+		  elsif dec_bits = "01010010011" then --SRLI
+			     out_bits <= '1' & (16 downto 8 => '0') & "0110" & "000" & '0';
+		  elsif dec_bits = "11010010011" then --SRAI
+			     out_bits <= '1' & (16 downto 8 => '0') & "0111" & "000" & '0';
+		  end if;
 		 else
 		  case dec_bits is
-		      when "00010010011" => --SLLI
-			     out_bits <= '1' & (16 downto 8 => '0') & "0101" & "000" & '0';
-		      when "01010010011" => --SRLI
-			     out_bits <= '1' & (16 downto 8 => '0') & "0110" & "000" & '0';
-		      when "11010010011" => --SRAI
-			     out_bits <= '1' & (16 downto 8 => '0') & "0111" & "000" & '0';
 		      -- R-Type Instructions
 		      when "00000110011" => --ADD
 			     out_bits <= '1' & (16 downto 8 => '0') & "0000" & "100" & '0';

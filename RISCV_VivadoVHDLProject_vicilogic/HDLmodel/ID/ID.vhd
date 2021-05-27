@@ -64,6 +64,7 @@ end component;
 component RB is
   Port (clk      : in  std_logic;
         rst      : in  std_logic;
+        ce       : in  std_logic;
         rs1 	 : in  std_logic_vector(4 downto 0);
         rs2 	 : in  std_logic_vector(4 downto 0);
 		RWr      : in  std_logic;
@@ -103,10 +104,11 @@ DEC_i: DEC port map
 		
 RB_i: RB port map 
        (clk   => clk,  
-        rst   => rst,  
+        rst   => rst, 
+        ce    => ce, 
         rs2   => rs2,  
         rs1   => rs1,  
-		  RWr   => RWr,  
+		RWr   => RWr,  
         WBDat => WBDat,
         rd    => rd,   
         rs1D  => rs1D, 

@@ -42,7 +42,7 @@ begin
         CS <= (others => '0');
     elsif rising_edge(clk) then   
 		if ce = '1' then
-        CS <= NS;
+            CS <= NS;
 		end if;
     end if;
 end process;  

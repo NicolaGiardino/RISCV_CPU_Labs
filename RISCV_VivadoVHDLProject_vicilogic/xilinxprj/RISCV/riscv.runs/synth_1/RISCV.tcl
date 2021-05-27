@@ -30,6 +30,7 @@ set_property ip_output_repo c:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_Si
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
   C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/EX/ALU.vhd
+  C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/CB16CLED.vhd
   C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/IF/CB32CLEIncValue.vhd
   C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/ID/DEC.vhd
   C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/RISCV_vicilogic_Package.vhd

@@ -1,6 +1,7 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
 "../../../../../../HDLmodel/EX/ALU.vhd" \
+"../../../../../../HDLmodel/MEM/CB16CLED.vhd" \
 "../../../../../../HDLmodel/IF/CB32CLEIncValue.vhd" \
 "../../../../../../HDLmodel/ID/DEC.vhd" \
 "../../../../../../HDLmodel/RISCV_vicilogic_Package.vhd" \
