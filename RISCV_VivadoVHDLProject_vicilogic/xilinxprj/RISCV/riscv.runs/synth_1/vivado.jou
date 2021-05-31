@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu May 27 23:18:17 2021
-# Process ID: 1992
+# Start of session at: Mon May 31 16:30:18 2021
+# Process ID: 1220
 # Current directory: C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/xilinxprj/RISCV/riscv.runs/synth_1
 # Command line: vivado.exe -log RISCV.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RISCV.tcl
 # Log file: C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/xilinxprj/RISCV/riscv.runs/synth_1/RISCV.vds

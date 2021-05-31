@@ -1,0 +1,27 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/EX/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ALU'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/CB16CLED.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CB16CLED'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/IF/CB32CLEIncValue.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CB32CLEIncValue'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/ID/DEC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DEC'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/RISCV_vicilogic_Package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/EX/EX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'EX'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/ID/ID.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ID'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/IF/IF.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'riscv_if'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/IF/IM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'IM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/ID/RB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/RISCV.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RISCV'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/WB/WB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'WB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/RISCV_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RISCV_TB'

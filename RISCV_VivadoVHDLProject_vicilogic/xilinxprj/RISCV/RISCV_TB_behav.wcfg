@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="309192386fs"></ZoomEndTime>
-      <Cursor1Time time="1000000000fs"></Cursor1Time>
+      <ZoomEndTime time="348848324fs"></ZoomEndTime>
+      <Cursor1Time time="80551000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="198"></NameColumnWidth>
+      <NameColumnWidth column_width="193"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="84" />
+   <WVObjectSize size="83" />
    <wvobject fp_name="/RISCV_TB/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -52,6 +52,10 @@
       <obj_property name="ElementShortName">clkPeriod</obj_property>
       <obj_property name="ObjectShortName">clkPeriod</obj_property>
    </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/instruction" type="array">
       <obj_property name="ElementShortName">instruction[31:0]</obj_property>
       <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
@@ -83,6 +87,10 @@
    <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/selPCSrc" type="logic">
       <obj_property name="ElementShortName">selPCSrc</obj_property>
       <obj_property name="ObjectShortName">selPCSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISCV_TB/uut/EX_i/brAddr" type="array">
+      <obj_property name="ElementShortName">brAddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">brAddr[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/RISCV_TB/uut/ID_i/DEC_i/jalr" type="logic">
       <obj_property name="ElementShortName">jalr</obj_property>
@@ -343,17 +351,5 @@
    <wvobject fp_name="/RISCV_TB/uut/MEM_i/outport_s" type="array">
       <obj_property name="ElementShortName">outport_s[15:0]</obj_property>
       <obj_property name="ObjectShortName">outport_s[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/RISCV_TB/uut/MEM_i/loadDat" type="array">
-      <obj_property name="ElementShortName">loadDat[15:0]</obj_property>
-      <obj_property name="ObjectShortName">loadDat[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/RISCV_TB/uut/MEM_i/NS" type="array">
-      <obj_property name="ElementShortName">NS[15:0]</obj_property>
-      <obj_property name="ObjectShortName">NS[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/RISCV_TB/uut/MEM_i/CS" type="array">
-      <obj_property name="ElementShortName">CS[15:0]</obj_property>
-      <obj_property name="ObjectShortName">CS[15:0]</obj_property>
    </wvobject>
 </wave_config>

@@ -180,22 +180,22 @@ begin
 	-- out_bits <= RWr & selWBD(2) & selDFrM(3) & MRd & MWr & selDToM(2) & selALUOp(4) & selALUBSrc & auipc & jalr & selPCSrc
 	if(is_u_instr = '1' or is_j_instr = '1') then
 	   case dec_bits(6 downto 0) is
-		  -- U-Type Instructions
-		  when "0110111" =>	--LUI
-	   		  out_bits <= '1' & (16 downto 0 => '0');
-		  when "0010111" => --AUIPC
-			 out_bits <= (17 downto 4 => '0') & "010" & '0';
-		  -- J-Type Instructions
-		  when "1101111" => --JAL
-			 out_bits <= '0' & "10" & (14 downto 1 => '0') & '1';
-		  when others =>
-			 out_bits <= (others => '0');
+	   -- U-Type Instructions
+		   when "0110111" =>	--LUI
+	   	      out_bits <= '1' & (16 downto 0 => '0');
+		   when "0010111" => --AUIPC
+			   out_bits <= (17 downto 4 => '0') & "010" & '0';
+		      -- J-Type Instructions
+		   when "1101111" => --JAL
+			  out_bits <= '1' & "10" & (14 downto 1 => '0') & '1';
+		   when others =>
+			  out_bits <= (others => '0');
 		end case;
-		elsif (is_i_instr = '1' or is_b_instr = '1' or is_s_instr = '1') then
+	elsif (is_i_instr = '1' or is_b_instr = '1' or is_s_instr = '1') then
 		  case dec_bits(9 downto 0) is
-		      -- I-Type Instruction
+		      --I-Type Instruction
 		      when "0001100111" => --JALR
-			     out_bits <= '1' & '1' & (15 downto 2 => '0') & "11";
+		          out_bits <= '1' & '1' & (15 downto 2 => '0') & "11";
 		      -- B-Type Instructions
 		      when "0001100011" => --BEQ
 			     out_bits <= (17 downto 8 => '0') & "1010" & "100" & branch;

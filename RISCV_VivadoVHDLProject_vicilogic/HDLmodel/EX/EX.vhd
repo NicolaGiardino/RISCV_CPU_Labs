@@ -59,9 +59,9 @@ end process;
 genBrAddr_i: process(PC, rs1D, jalr)
 begin
 	if jalr = '1' then
-		brAddr <= std_logic_vector(unsigned(extImm) + unsigned(PC));
-	else
 		brAddr <= std_logic_vector(unsigned(extImm) + unsigned(rs1D));
+	else
+		brAddr <= std_logic_vector(unsigned(extImm) + unsigned(PC));
 	end if;
 end process;
 

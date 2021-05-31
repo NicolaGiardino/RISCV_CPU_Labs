@@ -65,9 +65,7 @@ end process;
 -- write to memory array (accessing 32-bit data words)
 synch_i : process(clk, rst)
 begin
-	if rst = '1' then
-        memArray <= (others => X"00000000");
-	elsif rising_edge(clk) then	
+	if rising_edge(clk) then	
         if MWr = '1' and ce0 = '1' then
            memArray(to_integer(unsigned(memAddrSlice))) <= DToM;
 		end if;
@@ -76,9 +74,7 @@ end process;
 
 outport_i : process(clk, add, DToM)
 begin
-    if rst = '1' then
-        outport_s <= (others => '0');
-    elsif rising_edge(clk) then
+    if rising_edge(clk) then
         if add(4 downto 0) = "10000" and ce1 = '1' and MWr = '1' then
             outport_s <= DToM(15 downto 0);
         end if;
@@ -87,18 +83,14 @@ end process;
 
 rInport_i : process(clk, inport)
 begin
-    if rst = '1' then
-        rInport <= (others => '0');
-    elsif rising_edge(clk) then
+    if rising_edge(clk) then
         rInport <= inport;
     end if;
 end process;
             
 control1_i : process(add, clk, DToM)
 begin
-    if rst = '1' then 
-        control1 <= (others => '0');
-    elsif rising_edge(clk) then
+    if rising_edge(clk) then
         if add(4 downto 0) = "00100" and MWr = '1' and ce1 = '1' then
             control1 <= DToM(15 downto 0);
             loadData  <= DToM(15 downto 0);
@@ -108,9 +100,7 @@ end process;
 
 control0_i : process(add, clk, DToM)
 begin
-    if rst = '1' then 
-        control0 <= (others => '0');
-    elsif rising_edge(clk) then
+    if rising_edge(clk) then
         if add(4 downto 0) = "00000" and MWr = '1' and ce1 = '1' then
             control0 <= DToM(15 downto 0);
             load     <= DToM(2);
@@ -142,12 +132,12 @@ begin
 end process;
 
 -- combinational read from memory  
-DFrM_i : process(dataStack, cInPOutP, MRd, memArray)
+DFrM_i : process(ce0, ce1, memAddrSlice, cInPOutP, MRd, memArray)
 begin
   DFrM <= (others => '0'); -- default
   if MRd = '1' then
         if ce0 = '1' then
-            DFrM <= dataStack;
+            DFrM <= memArray(to_integer(unsigned(memAddrSlice)));
         elsif ce1 = '1' then
             DFrM <= cInPOutP;
         end if;

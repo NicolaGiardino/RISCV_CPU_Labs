@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu May 27 23:18:17 2021
-# Process ID: 1992
+# Start of session at: Mon May 31 16:30:18 2021
+# Process ID: 1220
 # Current directory: C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/xilinxprj/RISCV/riscv.runs/synth_1
 # Command line: vivado.exe -log RISCV.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RISCV.tcl
 # Log file: C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/xilinxprj/RISCV/riscv.runs/synth_1/RISCV.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a12ti'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a12ti'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 19000 
+INFO: Helper process launched with PID 15080 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 445.473 ; gain = 153.207
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 445.176 ; gain = 153.211
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'RISCV' [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/RISCV.vhd:23]
 INFO: [Synth 8-3491] module 'riscv_if' declared at 'C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/IF/IF.vhd:5' bound to instance 'IF_i' of component 'RISCV_IF' [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/RISCV.vhd:133]
@@ -54,78 +54,8 @@ INFO: [Synth 8-638] synthesizing module 'MEM' [C:/Users/nicol/Documents/GitHub/V
 INFO: [Synth 8-3491] module 'CB16CLED' declared at 'C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/CB16CLED.vhd:35' bound to instance 'CB16CLED_i' of component 'CB16CLED' [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:48]
 INFO: [Synth 8-638] synthesizing module 'CB16CLED' [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/CB16CLED.vhd:46]
 INFO: [Synth 8-256] done synthesizing module 'CB16CLED' (9#1) [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/CB16CLED.vhd:46]
-WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:77]
-WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:88]
-WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:97]
-WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:109]
-WARNING: [Synth 8-614] signal 'MRd' is read in the process but is not in the sensitivity list [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:123]
-WARNING: [Synth 8-614] signal 'cInPOutP' is read in the process but is not in the sensitivity list [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:123]
-WARNING: [Synth 8-614] signal 'ce0' is read in the process but is not in the sensitivity list [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:145]
-WARNING: [Synth 8-614] signal 'ce1' is read in the process but is not in the sensitivity list [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:145]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[0] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[1] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[2] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[3] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[4] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[5] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[6] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[7] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[8] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[9] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[10] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[11] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[12] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[13] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[14] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[15] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[16] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[17] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[18] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[19] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[20] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[21] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[22] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[23] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[24] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[25] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[26] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[27] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[28] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[29] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[30] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[31] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[32] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[33] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[34] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[35] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[36] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[37] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[38] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[39] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[40] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[41] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[42] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[43] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[44] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[45] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[46] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[47] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[48] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[49] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[50] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[51] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[52] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[53] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[54] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[55] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[56] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[57] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[58] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[59] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[60] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[61] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[62] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
-WARNING: [Synth 8-6014] Unused sequential element memArray_reg[63] was removed.  [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:69]
+WARNING: [Synth 8-614] signal 'MRd' is read in the process but is not in the sensitivity list [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:113]
+WARNING: [Synth 8-614] signal 'cInPOutP' is read in the process but is not in the sensitivity list [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:113]
 INFO: [Synth 8-256] done synthesizing module 'MEM' (10#1) [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:25]
 INFO: [Synth 8-3491] module 'WB' declared at 'C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/WB/WB.vhd:5' bound to instance 'WB_i' of component 'WB' [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/RISCV.vhd:202]
 INFO: [Synth 8-638] synthesizing module 'WB' [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/WB/WB.vhd:15]
@@ -154,25 +84,6 @@ WARNING: [Synth 8-3331] design MEM has unconnected port add[11]
 WARNING: [Synth 8-3331] design MEM has unconnected port add[10]
 WARNING: [Synth 8-3331] design MEM has unconnected port add[9]
 WARNING: [Synth 8-3331] design MEM has unconnected port add[8]
-WARNING: [Synth 8-3331] design MEM has unconnected port add[7]
-WARNING: [Synth 8-3331] design MEM has unconnected port add[6]
-WARNING: [Synth 8-3331] design MEM has unconnected port add[5]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[31]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[30]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[29]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[28]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[27]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[26]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[25]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[24]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[23]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[22]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[21]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[20]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[19]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[18]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[17]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[16]
 WARNING: [Synth 8-3331] design IM has unconnected port PC[31]
 WARNING: [Synth 8-3331] design IM has unconnected port PC[30]
 WARNING: [Synth 8-3331] design IM has unconnected port PC[29]
@@ -201,17 +112,17 @@ WARNING: [Synth 8-3331] design IM has unconnected port PC[1]
 WARNING: [Synth 8-3331] design IM has unconnected port PC[0]
 WARNING: [Synth 8-3331] design IM has unconnected port ce
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 509.121 ; gain = 216.855
+Finished Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 509.578 ; gain = 217.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 509.121 ; gain = 216.855
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 509.578 ; gain = 217.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a12ticsg325-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 509.121 ; gain = 216.855
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 509.578 ; gain = 217.613
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
 INFO: [Synth 8-5546] ROM "IMArray" won't be mapped to RAM because it is too sparse
@@ -221,13 +132,14 @@ INFO: [Synth 8-5546] ROM "out_bits" won't be mapped to RAM because it is too spa
 INFO: [Synth 8-5546] ROM "out_bits" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/EX/EX.vhd:61]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/CB16CLED.vhd:57]
+INFO: [Synth 8-4471] merging register 'loadData_reg[15:0]' into 'control1_reg[15:0]' [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:48]
 WARNING: [Synth 8-327] inferring latch for variable 'branch_reg' [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/EX/ALU.vhd:66]
 WARNING: [Synth 8-327] inferring latch for variable 'zero_reg' [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/EX/ALU.vhd:58]
 WARNING: [Synth 8-327] inferring latch for variable 'out_s_reg' [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/EX/ALU.vhd:26]
-WARNING: [Synth 8-327] inferring latch for variable 'cInPOutP_reg' [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:128]
-WARNING: [Synth 8-327] inferring latch for variable 'outport_reg' [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:137]
+WARNING: [Synth 8-327] inferring latch for variable 'cInPOutP_reg' [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:118]
+WARNING: [Synth 8-327] inferring latch for variable 'outport_reg' [C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/HDLmodel/MEM/MEM.vhd:127]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 509.121 ; gain = 216.855
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 509.578 ; gain = 217.613
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -248,8 +160,10 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
 	               32 Bit    Registers := 33    
-	               16 Bit    Registers := 6     
+	               16 Bit    Registers := 5     
 	                1 Bit    Registers := 3     
++---RAMs : 
+	               2K Bit         RAMs := 1     
 +---Muxes : 
 	  65 Input     32 Bit        Muxes := 1     
 	   2 Input     32 Bit        Muxes := 11    
@@ -335,8 +249,10 @@ Detailed RTL Component Info :
 Module MEM 
 Detailed RTL Component Info : 
 +---Registers : 
-	               16 Bit    Registers := 5     
+	               16 Bit    Registers := 4     
 	                1 Bit    Registers := 3     
++---RAMs : 
+	               2K Bit         RAMs := 1     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 3     
 	   6 Input      1 Bit        Muxes := 2     
@@ -385,15 +301,6 @@ WARNING: [Synth 8-3331] design MEM has unconnected port add[11]
 WARNING: [Synth 8-3331] design MEM has unconnected port add[10]
 WARNING: [Synth 8-3331] design MEM has unconnected port add[9]
 WARNING: [Synth 8-3331] design MEM has unconnected port add[8]
-WARNING: [Synth 8-3331] design MEM has unconnected port add[7]
-WARNING: [Synth 8-3331] design MEM has unconnected port add[6]
-WARNING: [Synth 8-3331] design MEM has unconnected port add[5]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[31]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[30]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[29]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[28]
-WARNING: [Synth 8-3331] design MEM has unconnected port DToM[27]
-INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-3332] Sequential element (ALU_i/branch_reg) is unused and will be removed from module EX.
 WARNING: [Synth 8-3332] Sequential element (ALU_i/zero_reg) is unused and will be removed from module EX.
 WARNING: [Synth 8-3332] Sequential element (ALU_i/out_s_reg[31]) is unused and will be removed from module EX.
@@ -477,7 +384,7 @@ WARNING: [Synth 8-3332] Sequential element (outport_reg[2]) is unused and will b
 WARNING: [Synth 8-3332] Sequential element (outport_reg[1]) is unused and will be removed from module MEM.
 WARNING: [Synth 8-3332] Sequential element (outport_reg[0]) is unused and will be removed from module MEM.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 641.211 ; gain = 348.945
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 638.816 ; gain = 346.852
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -490,7 +397,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 641.211 ; gain = 348.945
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 638.816 ; gain = 346.852
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -502,7 +409,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 641.211 ; gain = 348.945
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 638.816 ; gain = 346.852
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -526,7 +433,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 641.211 ; gain = 348.945
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:33 . Memory (MB): peak = 638.816 ; gain = 346.852
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -539,7 +446,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 641.211 ; gain = 348.945
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:33 . Memory (MB): peak = 638.816 ; gain = 346.852
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -551,25 +458,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 641.211 ; gain = 348.945
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:33 . Memory (MB): peak = 638.816 ; gain = 346.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 641.211 ; gain = 348.945
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:33 . Memory (MB): peak = 638.816 ; gain = 346.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 641.211 ; gain = 348.945
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:33 . Memory (MB): peak = 638.816 ; gain = 346.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 641.211 ; gain = 348.945
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:33 . Memory (MB): peak = 638.816 ; gain = 346.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -594,25 +501,25 @@ Report Instance Areas:
 |1     |top      |       |     0|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 641.211 ; gain = 348.945
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:33 . Memory (MB): peak = 638.816 ; gain = 346.852
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 275 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 641.211 ; gain = 348.945
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 641.211 ; gain = 348.945
+Synthesis finished with 0 errors, 0 critical warnings and 167 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:33 . Memory (MB): peak = 638.816 ; gain = 346.852
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:33 . Memory (MB): peak = 638.816 ; gain = 346.852
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 737.285 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 735.449 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-50 Infos, 264 Warnings, 0 Critical Warnings and 0 Errors encountered.
+50 Infos, 167 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 737.285 ; gain = 445.020
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 737.285 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 735.449 ; gain = 443.484
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 735.449 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/nicol/Documents/GitHub/VHDL_Course/RV32I_SingleStage/RISCV_VivadoVHDLProject_vicilogic/xilinxprj/RISCV/riscv.runs/synth_1/RISCV.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file RISCV_utilization_synth.rpt -pb RISCV_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu May 27 23:18:44 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon May 31 16:31:08 2021...

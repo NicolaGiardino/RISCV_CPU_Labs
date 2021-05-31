@@ -64,7 +64,7 @@ begin
  -- o/p msg to simulation  transcript
  report "RISC-V simulation start"; 
 
- wait for 10*clkPeriod; 	 
+ wait for 20*clkPeriod; 	 
 
  report "simulation done";   
  endOfSim <= true;
